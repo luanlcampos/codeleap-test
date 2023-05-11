@@ -3,8 +3,8 @@ import addPost from "../../actions/addPost";
 import { useSelector } from "react-redux";
 
 const CreatePost = () => {
-  const [postTitle, setPostTitle] = useState("Test from App");
-  const [postContent, setPostContent] = useState("Luan from app");
+  const [postTitle, setPostTitle] = useState("");
+  const [postContent, setPostContent] = useState("");
   const [loading, setLoading] = useState(false);
   const username = useSelector((state) => state.username);
 
